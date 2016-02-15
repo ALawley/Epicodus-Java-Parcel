@@ -25,5 +25,6 @@ public class ParcelTest {
   public void getShipCost_findsCostToShipwithGiftWrap() {
     Parcel testParcel = new Parcel (12, 12, 12, 0);
     assertEquals("14.64", testParcel.getShipCost(500, "Ground", "yes"));
+    assertEquals("14.64", testParcel.getShipCost(500, "Ground", "yes"));
   }
 }
