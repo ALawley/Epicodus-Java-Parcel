@@ -18,6 +18,12 @@ public class ParcelTest {
   @Test
   public void getShipCost_findsCostToShip() {
     Parcel testParcel = new Parcel (12, 24, 5, 80);
-    assertEquals(32.40, testParcel.getShipCost(1000, "Overnight"), 0.001);
+    assertEquals("32.40", testParcel.getShipCost(1000, "Overnight", "no"));
+  }
+
+  @Test
+  public void getShipCost_findsCostToShipwithGiftWrap() {
+    Parcel testParcel = new Parcel (12, 12, 12, 0);
+    assertEquals("14.64", testParcel.getShipCost(500, "Ground", "yes"));
   }
 }

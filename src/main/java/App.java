@@ -23,9 +23,10 @@ public class App {
       int weight = Integer.parseInt(request.queryParams("weight"));
       int distance = Integer.parseInt(request.queryParams("distance"));
       String speed = request.queryParams("speed");
+      String giftwrap = request.queryParams("giftwrap");
 
       Parcel myParcel = new Parcel(height, width, length, weight);
-      String cost = myParcel.getShipCost(distance, speed);
+      String cost = myParcel.getShipCost(distance, speed, giftwrap);
       model.put("cost", cost);
 
       model.put("template", "templates/parcel.vtl");
