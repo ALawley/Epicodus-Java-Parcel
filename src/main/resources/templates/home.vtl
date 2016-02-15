@@ -1,0 +1,40 @@
+<h1>Parcel Calculator</h2>
+<h3>Enter your info</h3>
+
+<form action='/parcel'>
+  <div class="form-group">
+    <label for="height">Height in Inches</label>
+    <input id="height" name="height" class="form-control" type="text">
+  </div>
+
+  <div class="form-group">
+    <label for="width">Width in Inches</label>
+    <input id="width" name="width" class="form-control" type="text">
+  </div>
+
+  <div class="form-group">
+    <label for="length">Length in Inches</label>
+    <input id="length" name="length" class="form-control" type="text">
+  </div>
+
+  <div class="form-group">
+    <label for="weight">Weight in Ounces</label>
+    <input id="weight" name="weight" class="form-control" type="text">
+  </div>
+
+  <div class="form-group">
+    <label for="distance">Miles from Portland</label>
+    <input id="distance" name="distance" class="form-control" type="text">
+  </div>
+
+  <div class="form-group">
+    <label for="speed">Choose Your Shipping Speed</label>
+    <select name="speed" id="speed">
+      <option value="Ground">Ground</option>
+      <option value="Express">Express + $5</option>
+      <option value="Overnight">Overnight + $10</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
